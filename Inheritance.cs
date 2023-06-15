@@ -6,16 +6,35 @@ using System.Threading.Tasks;
 
 namespace OopsConcept
 {
-    public class Inheritance
+    internal class Inheritance
     {
-        public string brand = "Hyundai";
         public void honk()
         {
-            Console.WriteLine("Tuut, tuut!");
+            Console.WriteLine("Hyundai");
         }
     }
+    //Single Inheritance
     class Car : Inheritance
     {
-        public string modelName = "Santro";
+        public void honk2()
+        {
+            Console.WriteLine("Santro");
+        }
+    }
+    //Hierarchical Inheritance
+    class Bike : Inheritance
+    {
+        public void honk3()
+        {
+            Console.WriteLine("Royal Enfield");
+        }
+    }
+    //Multilevel Inheritance
+    class Car2 : Car
+    {
+        public void honk4()
+        {
+            Console.WriteLine("Aura");
+        }
     }
 }

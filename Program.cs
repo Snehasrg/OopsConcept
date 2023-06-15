@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Welcome To Oops Concepts Problems");
             Console.WriteLine("Select any one option:- \n1.Object and Class Example." +
-                              "\n2.Inheritance Example."+ "\n3.Polymorphism Example." +
+                              "\n2.Inheritance and its types Example."+ "\n3.Polymorphism Example." +
                               "\n4.Encapsulation Example."+ "\n5.Abstraction Example.");
 
             int option = Convert.ToInt32(Console.ReadLine());
@@ -19,9 +19,13 @@
                     Console.WriteLine(obj.Colour);
                     break;
                 case 2:
-                    Car myCar = new Car();
+                    Car2 myCar = new Car2();
                     myCar.honk();
-                    Console.WriteLine(myCar.brand + " " + myCar.modelName);
+                    myCar.honk2();
+                    myCar.honk4();
+                    Bike mybike = new Bike();
+                    mybike.honk3();
+
                     break;
                 case 3:
                     StaticPolymorphism polymorphism = new StaticPolymorphism();
