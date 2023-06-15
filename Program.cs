@@ -7,7 +7,7 @@
             Console.WriteLine("Welcome To Oops Concepts Problems");
             Console.WriteLine("Select any one option:- \n1.Object and Class Example." +
                               "\n2.Inheritance Example."+ "\n3.Polymorphism Example." +
-                              "\n4.Encapsulation Example.");
+                              "\n4.Encapsulation Example."+ "\n5.Abstraction Example.");
 
             int option = Convert.ToInt32(Console.ReadLine());
 
@@ -42,6 +42,11 @@
                     encapsulation.Name = Console.ReadLine();
                     encapsulation.SetSalary(100000);
                     Console.WriteLine("Salary of " + encapsulation.Name + " is " + encapsulation.Salary);
+                    break;
+                case 5:
+                    Cow cow = new Cow();
+                    cow.Eat();
+                    cow.AnimalSound();
                     break;
             }                         
         
